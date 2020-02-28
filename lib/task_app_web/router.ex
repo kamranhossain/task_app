@@ -26,6 +26,12 @@ defmodule TaskAppWeb.Router do
     get "/", PageController, :index
   end
 
+  scope "/", TaskAppWeb do
+    pipe_through :browser
+
+    resources "/tasks", TaskController
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", TaskAppWeb do
   #   pipe_through :api
