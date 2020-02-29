@@ -34,6 +34,15 @@ config :task_app, :pow,
   controller_callbacks: Pow.Extension.Phoenix.ControllerCallbacks,
   mailer_backend: TaskAppWeb.PowMailer
 
+config :task_app, :pow_assent,
+  providers: [
+    github: [
+      client_id: "dc923edbc767638ba772",
+      client_secret: "57c618a7c736e8b90befeb33d179683fd09a2b17",
+      strategy: Assent.Strategy.Github
+    ]
+  ]
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"
