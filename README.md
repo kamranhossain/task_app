@@ -1,5 +1,7 @@
 # TaskApp
 
+Phoenix App Authentication with pow and pow_assent from [knowthen screencast](https://www.knowthen.com/easy-authentication-in-elixir-and-phoenix-with-the-pow-and-pow_assent-libraries)
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
